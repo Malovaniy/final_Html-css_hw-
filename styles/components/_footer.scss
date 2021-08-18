@@ -1,0 +1,99 @@
+@font-face  {
+    font-family: 'Montserrat-Bold';
+    src: url(Acert/font/Montserrat-Bold.ttf);
+
+    
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(Acert/font/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(Acert/font/Roboto-Light.ttf);
+}
+
+
+hr{
+    border: solid 1px rgb(233, 78, 78);
+}
+.foot{
+    @include flexCenterNotAlign();
+    flex-direction: row;
+    width: 100%;
+    height: 15em;
+    padding: 1%;
+}
+.footFlex{
+    width: 14%;
+    // border: solid 1px black;
+    padding: 1%;
+    padding-left: 4%;
+}
+
+
+.footDefault{
+    @include Regular();
+
+    font-size: 18px;
+    color: rgb(153, 148, 148);
+}
+.bold{
+    @include bolt();
+    color:black;
+}
+.footTitlle{
+    @include Regular();
+
+    color: rgb(233, 78, 78);
+    // margin-top: 5%;
+}
+.footGray{
+    color: rgb(179, 175, 175);
+    font-size: 11px;
+    @include bolt();
+}
+.footImg{
+    background-image: url(Acert/Img/Bitmap.png);
+    width: 100px;
+    height: 24px;
+    background-size: 100%;
+}
+@media screen and(max-width: 1250px){
+    .footFlex{
+        width: 16%;
+    }
+}
+@media screen and(max-width: 768px){
+
+    .footFlex{
+        width: 20%;
+
+    }
+}
+@media screen and(min-width: 320px) and(max-width: 480px){
+    .foot{
+        // flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 18em;
+    }
+    .footFlex{
+        // width: 50%;
+        flex-wrap: nowrap;
+        padding: 0px;
+        margin: auto;
+        width: 60% ;
+        
+    }
+
+}
+@media screen and(min-width: 480px)and(max-width: 768px){
+    .footFlex{
+        width: 26%;
+    }
+}

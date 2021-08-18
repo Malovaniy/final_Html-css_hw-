@@ -1,0 +1,572 @@
+@font-face  {
+    font-family: 'Montserrat-Bold';
+    src: url(Acert/font/Montserrat-Bold.ttf);
+
+    
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(Acert/font/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(Acert/font/Roboto-Light.ttf);
+}
+
+
+.pages{
+    @include flexCenterNotAlign();
+    width: 100%;
+    flex-direction: column;
+}
+.pageParagraf{
+    @include bolt();
+    text-align: center;
+    font-size: $mainTextSizeMedium;
+    // font-weight: bold;
+    margin-top: 4%;
+}
+.two{
+    @include bolt();
+
+    text-align: center;
+    font-size: $mainTextSizeMedium;
+    // font-weight: bold;
+    // margin-top: 2%;
+}
+.three{
+    margin-top: 2%;
+
+}
+.forBlocks{
+    @include flexCenterNotAlign();
+    width: 100%;
+    flex-direction: row;
+
+}
+.blocksA{
+    width: 20vw;
+    height: 22em;
+    margin-left: 1%;
+    margin-top: 2%;
+    background-image: url(Acert/Img/1.png);
+    background-size: cover;
+}
+.blocksB{
+    width: 20vw;
+    height: 22em;
+    margin-left: 1%;
+    margin-top: 2%;
+    background-image: url(Acert/Img/2.png);
+    background-size: cover;
+}
+.blocksC{
+    width: 20vw;
+    height: 22em;
+    margin-left: 1%;
+    margin-top: 2%;
+    background-image: url(Acert/Img/3.png);
+    background-size: cover;
+}
+.blocksA:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+.blocksB:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+.blocksC:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+
+.step{
+    background-color: rgb(233, 78, 78);
+    border-radius: 30px;
+    width: 20%;
+    height: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 13em;
+    left: 2%;
+}
+.sed{
+    
+    position: relative;
+    top: 7.8em;
+    left: 3%;
+    color: white;
+    font-size: $mainTextSizeMedium;
+    width: 45%;
+
+}
+.nulla{
+    position: relative;
+    bottom: -16.5em;
+    left: 3%;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+}
+.avatars{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ava1{
+    @include flexCenterNotAlign();
+    width: 18em;
+    height: 15em;
+    margin-left: 30px;
+    margin-top: 2%;
+    
+
+}
+.center80{
+    @include flexCenterNotAlign();
+    width: 80%;
+    margin: auto;
+}
+.forImg{
+    width: 100px;
+    height: 100px;
+    background-image: url(Acert/Img/Avatar.png);;
+    background-size: cover;
+    margin-top: 5%;
+}
+.avatarka2{
+    background-image: url(Acert/Img/ava1.png);
+
+}
+.avatarka3{
+    background-image: url(Acert/Img/ava2.png);
+
+}
+.avatarka4{
+    background-image: url(Acert/Img/ava4.png)
+
+}
+.name{
+    @include bolt();
+
+    // font-weight: bold;
+    white-space: nowrap;
+    // text-align: center;
+    position: relative;
+    bottom: -120%;
+    font-size: 19px;
+    margin-left: -15%;
+}
+.avaText{
+    color: black;
+    position: relative;
+    bottom: -140%;
+    font-size: 15px;
+    margin-left: -90%;
+    width: 290%;
+    text-align: center;
+}
+
+.w100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btPages{
+    border: solid rgb(233, 78, 78) 2px;
+    border-radius: 30px;
+    text-align: center;
+    width: 8%;
+    color: rgb(233, 78, 78);
+    padding: 5px;
+    
+}
+.btPages:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+    background-color: rgb(233, 78, 78);
+    color: white;
+}
+.discover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+}
+.fater{
+    width: 58%;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.parent{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.child{
+    @include flexCenter();
+    width: 32%;
+    background-size: cover;
+    height: 100%;
+    margin-left: 1.5%;
+}
+
+.child:hover{
+
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+.sport{
+    background-image: url(Acert/Img/Sport.png);
+
+}
+.inBlock{
+    color: white;
+    font-size: $mainTextSizeMedium;
+    @include bolt();
+    // width: 65%;
+    // white-space: normal; 
+    // text-align: center;
+    // margin: auto;
+}
+.Wellness{
+    background-image: url(Acert/Img/Healath.png );
+}
+.Extreme{
+    background-image: url(Acert/Img/Extreme.png);
+    padding-left: 3%;
+}
+.games{
+    background-image: url(Acert/Img/Games.png);
+    margin-top: 1.5%;
+}
+.culture{
+    background-image: url(Acert/Img/Culture.png);
+    margin-top: 1.5%;
+    width: 66%;
+}
+.Trevel{
+    background-image: url(Acert/Img/traveles.png);
+    margin-top: 3%;
+}
+.Relax{
+    background-image: url(Acert/Img/relax.png);
+    margin-top: 3%;
+    width: 66%;
+}
+.notBold{
+    font-weight: 100;
+    font-size: $mainTextSizeDefault;
+    color: rgb(94, 94, 94);
+    margin-top: 2%;
+}
+.forInput{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin-top: -2%;
+}
+.seach{
+    margin-left:0%;
+    width: 25%;
+    height: 37px;
+    padding-left: 1%;
+    color: rgb(56, 53, 53);
+    
+
+}
+.seach:focus{
+    box-shadow:0 0 20px rgb(233, 78, 78);
+    border: none;
+    outline: none;
+
+
+}
+
+.butInp{
+    background-color: rgb(233, 78, 78);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    border: solid 1px ;
+    width: 11%;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 2%;
+    line-height: 2.15;
+}
+.butInp:hover{
+
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+
+@media screen and(max-width: 1700px){
+    .btPages{
+        width: 11%;
+    }
+    .step{
+        width: 25%;
+        left: 7%;
+    }
+    .sed{
+        font-size: 15px;
+        top: 14.8em;
+        width: 100%;
+        left: 0%;
+        text-align: center;
+    }
+    .blocksA{
+        width: 23vw;
+    }
+    .blocksB{
+        width: 23vw;
+    }
+    .blocksC{
+        width: 23vw;
+    }
+    .ava1{
+        width: 16em;
+    }
+    .avaText{
+        width: 220%;
+        margin-left: -57%;
+    }
+    .fater{
+        width: 75%;
+    }
+    .butInp{
+        width: 20%;
+    }
+}
+
+@media screen and(max-width: 1250px){
+    .ava1{
+        width: 9em;
+    }
+    .avaText{
+        width: 180%;
+        margin-left: -40%;
+
+    }
+    .btPages{
+        width: 17%;
+    }
+    .blocksA{
+        width: 20%;
+        margin-left: -2%;
+        height: 20em;
+
+    }
+    .blocksB{
+        width: 20%;
+        height: 20em;
+        
+    }
+    .blocksC{
+        width: 20%;
+        height: 20em;
+
+    }
+    .step{
+        width: 35%;
+    }
+    .nulla{
+        font-size: 13px;
+        bottom: -17.5em;
+    }
+    .fater{
+        width: 66%;
+        margin-left: 15.5%
+    }
+    .avatars{
+        margin-left: -5.5%
+
+    }
+
+}
+@media screen and(min-width: 768px)and(max-width: 941px){
+    .ava1{
+        width: 30%;
+        margin-right: 1%;
+
+    }
+
+    .avaText{
+        width: 139%;
+        margin-left: -20%;
+
+    }
+    .blocksA{
+        width: 26%;
+    }
+    .blocksB{
+        width: 26%;
+    }
+    .blocksC{
+        width: 26%;
+    }
+}
+
+
+@media screen and(max-width: 768px){
+
+    .avatars{
+        flex-wrap: wrap;
+        margin-left: 3.5%;
+
+    }
+    .ava1{
+        width: 40%;
+    }
+    .avaText{
+        width: 202%;
+        margin-left: -55%;
+        
+    }
+    .blocksA{
+        width: 29%;
+        margin-left: 0%;
+    }
+    .blocksB{
+        width: 29%;
+        margin-left: 2%;
+
+    }
+    .blocksC{
+        width: 29%;
+        margin-left: 2%;
+
+    }
+    .fater{
+        width: 92%;
+        margin-left: 3.5%;
+    }
+    .butInp{
+        width: 30%;
+    }
+    .seach{
+        width: 40%;
+    }
+}
+@media screen and(min-width: 320px) and(max-width: 480px){
+    .forBlocks{
+        flex-wrap: wrap;
+    }
+    .blocksA{
+        width: 100%;
+    }
+    .blocksB{
+        width: 100%;
+        margin-left: 0 ;
+    }
+    .blocksC{
+        width: 100%;
+        margin-left: 0 ;
+
+    }
+    .discover{
+        flex-wrap: wrap;
+    }
+    .fater{
+        flex-direction: column;
+        height: 150rem;
+    }
+    .parent{
+        flex-direction: column;
+
+    }
+    .forAdapt{
+        height: 64rem;
+
+    }
+
+    .child{
+        width: 100%;
+        margin-top: 2%;
+        margin-left: 0.5%;
+    }
+    .ava1{
+        width: 60%;
+        margin-left: 0px;
+    }
+    .avatars{
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+    .btPages{
+        width: 60%;
+    }
+
+    .forAdaptPhone{
+        margin-top: 5%;
+    }
+    .notBold{
+        margin-top: 0;
+    }
+    .forInput{
+        flex-wrap: wrap;
+    }
+    .seach{
+        width: 90%;
+    }
+    .butInp{
+        width: 90%;
+        margin-top: 2%;
+    }
+}
+@media screen and(min-width: 480px)and(max-width: 768px){
+    .blocksA{
+        width: 31%;
+        height: 21em;
+    }
+    .blocksB{
+        width: 31%;
+        height: 21em;
+
+    }
+    .blocksC{
+        width: 31%;
+        height: 21em;
+
+    }
+    .center80{
+        width: 90%;
+    }
+    .avaText{
+        width: 181%;
+        margin-left: -40%;
+    }
+    .btPages{
+        width: 30%;
+    }
+    .fater{
+        width: 99%;
+        margin-left: -0.5%;
+    }
+    .Extreme{
+        padding-left: 1%;
+    }
+    .butInp{
+        width: 35%;
+    }
+
+
+}

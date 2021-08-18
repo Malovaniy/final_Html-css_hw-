@@ -1,0 +1,27 @@
+@mixin flexCenterNotAlign {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    
+}
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bolt {
+    font-family: 'Montserrat-Bold';
+}
+
+@mixin Regular {
+    font-family: 'Montserrat-Regular';
+}
+
+@mixin Light {
+    font-family: "Roboto-Light";
+}
